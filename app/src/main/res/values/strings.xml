@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RevLocale</string>
+    <string name="sample_text">This is a message</string>
+</resources>

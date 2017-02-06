@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefff"
+    android:animateLayoutChanges="true"
+    tools:context="com.reverie.revlocale.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/homeHeaderRL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#123456">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="RevLocale"/>
+
+        <ImageView
+            android:id="@+id/revLangPickerIV"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/revlocale_lang"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/homeContentRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/homeHeaderRL">
+
+        <TextView
+            android:id="@+id/homeMsgTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:textColor="#282828"
+            android:text="@string/sample_text"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/homeLangPickerRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/homeHeaderRL"
+        android:background="#11000000"
+        android:padding="2dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="#282828"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true">
+
+            <ListView
+                android:id="@+id/langPickerLV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+            </ListView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
